@@ -23,6 +23,6 @@ module.exports = defineConfig({
       html: false,
       json: true,
     },
-    baseUrl: "https://the-internet.herokuapp.com",
+    baseUrl: "https://magento.softwaretestingboard.com/",
   },
 });
