@@ -24,5 +24,5 @@ module.exports = defineConfig({
       json: true,
     },
     baseUrl: "https://magento.softwaretestingboard.com/",
-  },
+  }
 });

@@ -1,8 +1,8 @@
-Feature: Fluxo de checkout simples
+Feature: Fluxo de checkout
 
-  Scenario: Finalizar uma compra com sucesso
+  Scenario: Realizar uma compra com sucesso
     Given que acesso a página inicial do e-commerce
-    And faço login com usuário "rafa@lorenz.com" e senha "raf@123456"
+    And crio um novo usuário e verifico se já está logado
     When adiciono um produto ao carrinho
     And vou para o carrinho e inicio o checkout
     And preencho os dados de envio e pagamento

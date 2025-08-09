@@ -14,14 +14,3 @@ Cypress.Commands.add("login", (user, pass) => {
   cy.get("#pass").type(pass);
   cy.get("#send2").click();
 });
-
-Cypress.Commands.add('checkoutProduct', () => {
-  HomePage.visit();
-  HomePage.selectFirstProduct();
-  ProductPage.addToCart();
-  ProductPage.goToCart();
-  CartPage.proceedToCheckout();
-  CheckoutPage.fillShippingDetails();
-  CheckoutPage.selectShippingMethod();
-  CheckoutPage.placeOrder();
-});
