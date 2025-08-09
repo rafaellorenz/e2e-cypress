@@ -9,8 +9,19 @@
 // ***********************************************
 
 Cypress.Commands.add("login", (user, pass) => {
-  cy.visit("/login");
-  cy.get("#username").type(user);
-  cy.get("#password").type(pass);
-  cy.get("button[type=submit]").click();
+  cy.visit("/customer/account/login/");
+  cy.get("#email").type(user);
+  cy.get("#pass").type(pass);
+  cy.get("#send2").click();
+});
+
+Cypress.Commands.add('checkoutProduct', () => {
+  HomePage.visit();
+  HomePage.selectFirstProduct();
+  ProductPage.addToCart();
+  ProductPage.goToCart();
+  CartPage.proceedToCheckout();
+  CheckoutPage.fillShippingDetails();
+  CheckoutPage.selectShippingMethod();
+  CheckoutPage.placeOrder();
 });
