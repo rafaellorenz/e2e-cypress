@@ -34,7 +34,7 @@ exports.config = {
       }
     }]
   ],
-  services: ["appium"],['browserstack'],
+  services: ["appium", "browserstack"],
   appium: {
     command: "appium",
   },
