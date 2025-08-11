@@ -25,7 +25,7 @@ Given('crio um novo usuário e verifico se já está logado', () => {
     firstName: faker.person.firstName(),
     lastName: faker.person.lastName(),
     email: faker.internet.email(),
-    password: faker.internet.password({ length: 12 })
+    password: "Raf@el123456"
   };
   cy.writeFile('cypress/fixtures/userData.json', userData);
 
