@@ -1,4 +1,6 @@
 exports.config = {
+  user: process.env.BROWSERSTACK_USERNAME,
+  key: process.env.BROWSERSTACK_ACCESS_KEY,
   runner: "local",
   specs: ["appium/tests/**/*.js"],
   maxInstances: 1,
@@ -6,7 +8,7 @@ exports.config = {
     platformName: "Android",
     "appium:deviceName": "emulator-5554",
     "appium:platformVersion": "16.0",
-    "appium:app": "mda-2.2.0-25.apk",
+    "appium:app": "bs://48061ed201f9c086394f6ab3e9fbc2c9c1ed8515",
     "appium:automationName": "UiAutomator2",
     'appium:autoGrantPermissions': true,
     'appium:unicodeKeyboard': true,
@@ -32,7 +34,7 @@ exports.config = {
       }
     }]
   ],
-  services: ["appium"],
+  services: ["appium"],['browserstack'],
   appium: {
     command: "appium",
   },
