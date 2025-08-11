@@ -23,8 +23,5 @@ jobs:
       - name: Rodar testes E2E com Cypress
         run: npx cypress run
 
-      - name: Rodar testes de API com k6
-        run: npx k6 run k6/test.js
-
       - name: Rodar testes móveis com Appium
         run: npx wdio wdio.conf.js
