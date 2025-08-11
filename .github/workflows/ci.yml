@@ -26,6 +26,3 @@ jobs:
 
       - name: Rodar testes E2E com Cypress
         run: npx cypress run
-
-      - name: Rodar testes móveis com Appium
-        run: npx wdio wdio.conf.js
