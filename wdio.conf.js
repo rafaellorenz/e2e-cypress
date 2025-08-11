@@ -17,7 +17,21 @@ exports.config = {
   mochaOpts: {
     timeout: 600000
   },
-  reporters: ["spec"],
+  reporters: [
+    ['mochawesome', {
+      outputDir: './reports',
+      outputFileFormat: function(opts) { 
+        return `results-${opts.cid}.${opts.capabilities}.json`;
+      },
+      mochawesomeOpts: {
+        reportDir: './reports',
+        reportFilename: 'report',
+        quiet: true,
+        json: false,
+        html: true,
+      }
+    }]
+  ],
   services: ["appium"],
   appium: {
     command: "appium",
