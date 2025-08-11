@@ -6,7 +6,7 @@ exports.config = {
     platformName: "Android",
     "appium:deviceName": "emulator-5554",
     "appium:platformVersion": "16.0",
-    "appium:app": "/QA/e2e-cypress/mda-2.2.0-25.apk",
+    "appium:app": "mda-2.2.0-25.apk",
     "appium:automationName": "UiAutomator2",
     'appium:autoGrantPermissions': true,
     'appium:unicodeKeyboard': true,
