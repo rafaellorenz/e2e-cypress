@@ -41,7 +41,7 @@ describe('Realizar o fluxo de checkout', () => {
     await CheckoutPage.clickToPaymentButton();
     await CheckoutPage.fillCardFullName(userFullName);
     await CheckoutPage.fillCardNumber(faker.finance.creditCardNumber());
-    await checkoutPage.fillExpireDate("08/30");
+    await CheckoutPage.fillExpireDate("08/30");
     await CheckoutPage.fillSecurityCode(faker.finance.creditCardCVV());
     await CheckoutPage.clickReviewOrderButton();
 
